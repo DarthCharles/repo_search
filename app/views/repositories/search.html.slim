@@ -1,0 +1,23 @@
+= render 'form'
+
+.row
+  .col-md-12
+    table.table.table-bordered
+      thead
+        tr
+          th Name
+          th URL
+          th Language
+          th Author
+          th Stars
+          th Last Updated
+
+      tbody
+        - @result.repos.each do |repo|
+          tr
+            td = repo.name
+            td = link_to(repo.url, repo.url)
+            td = repo.language
+            td = repo.author
+            td = repo.stars
+            td = I18n.l(repo.updated_at)

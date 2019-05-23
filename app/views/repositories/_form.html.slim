@@ -1,0 +1,6 @@
+.row
+  .col-md-12
+    .search_form
+      p Search for any repo here:
+      = simple_form_for :search, url: repositories_search_path, method: :get do |f|
+        = f.input :query, label: false, input_html: { class: 'form-control' }

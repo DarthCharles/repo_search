@@ -44,6 +44,9 @@ gem 'simple_form'
 # Boostrap to make it presentable
 gem 'bootstrap-sass'
 
+# For 3rd party requests
+gem 'rest-client'
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
